@@ -2459,6 +2459,11 @@ print {
     width: 50%;
 }
 
+.righticon {
+    float: right;
+    width: 12%;
+}
+
 a {
     text-decoration: none;
 }
