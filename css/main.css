@@ -2448,22 +2448,3 @@ print {
         padding: 0;
     }
 }
-
-.left {
-    float: left;
-    width: 50%;
-}
-
-.right {
-    float: right;
-    width: 50%;
-}
-
-.righticon {
-    float: right;
-    width: 12%;
-}
-
-a {
-    text-decoration: none;
-}
