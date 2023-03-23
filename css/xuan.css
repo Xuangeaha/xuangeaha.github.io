@@ -13,8 +13,24 @@
     width: 12%;
 }
 
-.paragraph {
+.back {
+    float: right;
+    width: 13%;
+    font: 20px sans-serif;
+    text-align: left;
+}
+
+.indent {
     text-indent:2em;
+}
+
+.bottom {
+    color: #d6d6d6;
+}
+
+.bottom:hover,
+.bottom:focus {
+    color: #1d4b8f;
 }
 
 .signature {
