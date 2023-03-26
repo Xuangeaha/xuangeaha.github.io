@@ -95,7 +95,7 @@
         </div>
         <div class="sect1">
             <div class="left">
-                <canvas id="clickgraph" width="6" height="5"></canvas>
+                <canvas id="clickgraph" width="3" height="2"></canvas>
                 <script>
                     var ctx = document.getElementById('clickgraph').getContext('2d');
                     var chart = new Chart(ctx, {
@@ -122,7 +122,7 @@
                 </script>
             </div>
             <div class="right">
-                <canvas id="flrgraph" width="6" height="5"></canvas>
+                <canvas id="flrgraph" width="3" height="2"></canvas>
                 <script>
                     var ctx = document.getElementById('flrgraph').getContext('2d');
                     var chart = new Chart(ctx, {
@@ -149,7 +149,7 @@
                 </script>
             </div>
         </div>
-        <hr>
+        &emsp;<hr>
         <div class="sect1">
             <h2 id="_promotion">推广</h2>
             <div class="sectionbody">
@@ -170,6 +170,58 @@
         <div class="sect1">
             <h2 id="_vscode_extensions"><img src="assets/vsce/favicon.ico" width="40">&nbsp;&nbsp;VSCode 扩展</h2>
             <div class="sectionbody">
+                <div style="width: 750px; margin: 0 auto;">
+                    <canvas id="vscegraph"></canvas>
+                    <script>
+                        var ctx = document.getElementById('vscegraph');
+                        const date = ['3-18', '3-19', '3-20', '3-21', '3-22', '3-23', '3-24', '3-25'];
+                        const jeiData = [1311, 1341, 1374, 1408, 1447, 1489, 1527, 1556];
+                        const pdData = [1142, 1170, 1202, 1252, 1292, 1339, 1371, 1411];
+                        const vbData = [831, 881, 929, 981, 1036, 1101, 1149, 1304];
+                        const jpiData = [294, 394, 545, 685, 839, 1012, 1156, 1285];
+                        var chart = new Chart(ctx, {
+                            // 要创建的图表类型
+                            type: 'line',
+
+                            // 数据集
+                            data: {
+                                labels: date,
+                                datasets: [{
+                                    label: 'Just Enough Git',
+                                    borderColor: "rgba(255, 159, 64)",
+                                    fill: false,
+                                    data: jeiData,
+                                },
+                                {
+                                    label: "Print Divider",
+                                    borderColor: "rgba(54, 162, 235)",
+                                    fill: false,
+                                    data: pdData,
+                                },
+                                {
+                                    label: "VSMarketplace Badges",
+                                    borderColor: "rgba(75, 192, 192)",
+                                    fill: false,
+                                    data: vbData,
+                                },
+                                {
+                                    label: "Just Print It",
+                                    borderColor: "rgba(173, 255, 47)",
+                                    fill: false,
+                                    data: jpiData,
+                                }]
+                            },
+
+                            // 配置选项
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'XuangeAha(XuangeAha) Visual Studio Marketplace Extensions'
+                                }
+                            }
+                        });
+                    </script>
+                </div>
                 <div class="paragraph">
                     <div class="righticon">
                         <img src="assets/vsce/Just-Enough-Git.png" width="110">
