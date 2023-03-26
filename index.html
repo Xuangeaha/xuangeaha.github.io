@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/xuan.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/vsce.js"></script>
 </head>
 
 <body class="XuanMain">
@@ -174,11 +175,6 @@
                     <canvas id="vscegraph"></canvas>
                     <script>
                         var ctx = document.getElementById('vscegraph');
-                        const date = ['3-18', '3-19', '3-20', '3-21', '3-22', '3-23', '3-24', '3-25'];
-                        const jeiData = [1311, 1341, 1374, 1408, 1447, 1489, 1527, 1556];
-                        const pdData = [1142, 1170, 1202, 1252, 1292, 1339, 1371, 1411];
-                        const vbData = [831, 881, 929, 981, 1036, 1101, 1149, 1304];
-                        const jpiData = [294, 394, 545, 685, 839, 1012, 1156, 1285];
                         var chart = new Chart(ctx, {
                             // 要创建的图表类型
                             type: 'line',
@@ -202,7 +198,7 @@
                                     label: "VSMarketplace Badges",
                                     borderColor: "rgba(75, 192, 192)",
                                     fill: false,
-                                    data: vbData,
+                                    data: vsbData,
                                 },
                                 {
                                     label: "Just Print It",
