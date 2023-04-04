@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/xuan.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="js/vsce.js"></script>
+    <script src="js/chartData.js"></script>
 </head>
 
 <body class="XuanMain">
@@ -105,10 +105,10 @@
 
                         // 数据集
                         data: {
-                            labels: ["哔哩哔哩(大号 播放量)", "哔哩哔哩(大号 阅读量)", "哔哩哔哩(小号 播放量)", "哔哩哔哩(小号 阅读量)", "知乎", "CSDN", "VSMarketplace"],
+                            labels: clickLabel,
                             datasets: [{
-                                backgroundColor: ["rgba(255, 99, 132)","rgba(255, 159, 64)","rgba(255, 205, 86)","rgba(75, 192, 192)","rgba(54, 162, 235)","rgba(153, 102, 255)","rgba(201, 203, 207)"],
-                                data: [24.9, 5.1, 19.7, 4.7, 10.5, 12.4, 0.58],
+                                backgroundColor: doughnutBackgroundColor,
+                                data: clickData,
                             }]
                         },
 
@@ -123,19 +123,19 @@
                 </script>
             </div>
             <div class="right">
-                <canvas id="flrgraph" width="3" height="2"></canvas>
+                <canvas id="followergraph" width="3" height="2"></canvas>
                 <script>
-                    var ctx = document.getElementById('flrgraph').getContext('2d');
+                    var ctx = document.getElementById('followergraph').getContext('2d');
                     var chart = new Chart(ctx, {
                         // 要创建的图表类型
                         type: 'doughnut',
 
                         // 数据集
                         data: {
-                            labels: ["哔哩哔哩(大号)", "哔哩哔哩(小号)", "知乎", "CSDN"],
+                            labels: followerLabel,
                             datasets: [{
-                                backgroundColor: ["rgba(255, 99, 132)","rgba(255, 159, 64)","rgba(255, 205, 86)","rgba(75, 192, 192)","rgba(54, 162, 235)","rgba(153, 102, 255)","rgba(201, 203, 207)"],
-                                data: [1294, 466, 56, 198],
+                                backgroundColor: doughnutBackgroundColor,
+                                data: followerData,
                             }]
                         },
 
