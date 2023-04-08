@@ -24,6 +24,12 @@
     text-indent:2em;
 }
 
+.uploadtime {
+    float: right;
+    width: 20%;
+    color: gray;
+}
+
 .bottom {
     color: #d6d6d6;
 }

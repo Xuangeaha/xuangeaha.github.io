@@ -1,0 +1,11 @@
+document.writeln(`<div id="footer">
+<div id="footer-text">
+    Copyright (c) 2023 轩哥啊哈OvO&emsp;All rights reserved.
+    <br>
+    <a href="https://xuangeaha.github.io/" class="bottom">主页</a>&nbsp;|&nbsp;
+    <a href="https://xuangeaha.github.io/MIT-License" class="bottom">MIT License</a>&nbsp;|&nbsp;
+    <a href="https://xuangeaha.github.io/private-policy" class="bottom">隐私政策</a>&nbsp;|&nbsp;
+    <a href="https://github.com/Xuangeaha/xuangeaha.github.io" class="bottom">源代码仓库</a>
+    </div>
+</div>
+</div>`)
