@@ -13,6 +13,28 @@
     width: 12%;
 }
 
+.all {
+    position: relative;
+    text-align: center;
+    font: x-large sans-serif;
+}
+
+#clickAll {
+    font: 3em 华文细黑;
+}
+
+#followerAll {
+    font: 3em 华文细黑;
+}
+
+.divider {
+    position: absolute;
+    width: 1px;
+    height: 450px;
+    background: darkgray;
+    margin-left: 49%;
+}
+
 .back {
     float: right;
     width: 13%;

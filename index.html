@@ -94,6 +94,29 @@
                     </p>
                 </div>
             </div>
+        </div><br>
+        <div class="sect0">
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <div class="all">
+                        <div class="divider"></div>
+                        <div class="left">
+                            全网总点击量
+                            <div id="clickAll"></div>
+                            <script>
+                                document.getElementById("clickAll").innerHTML = clickAll.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+                            </script>
+                        </div>
+                        <div class="right">
+                            全网总粉丝量
+                            <div id="followerAll"></div>
+                            <script>
+                                document.getElementById("followerAll").innerHTML = followerAll.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+                            </script>
+                        </div>
+                    </div>    
+                </div>
+            </div>
         </div>
         <div class="sect1">
             <div class="left">
