@@ -198,8 +198,7 @@
         <div class="sect1">
             <h2 id="_vscode_extensions"><img src="assets/image/vsce/favicon.ico" width="40">&nbsp;&nbsp;VSCode 扩展</h2>
             <div class="sectionbody">
-                <div class="vscegraph">
-                    <canvas id="vscegraph"></canvas>
+                    <canvas id="vscegraph" width="300" height="130"></canvas>
                     <script>
                         var ctx = document.getElementById('vscegraph');
                         var chart = new Chart(ctx, {
@@ -243,6 +242,7 @@
 
                             // 配置选项
                             options: {
+                                responsive: true,
                                 title: {
                                     display: true,
                                     text: 'XuangeAha(XuangeAha) Visual Studio Marketplace Extensions'
@@ -250,7 +250,7 @@
                             }
                         });
                     </script>
-                </div>
+                
                 <div class="paragraph">
                     <div class="righticon">
                         <img src="assets/image/vsce/Just-Enough-Git.png" width="110">
