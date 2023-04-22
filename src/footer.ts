@@ -1,4 +1,4 @@
-document.writeln(`<div id="footer">
+var footer = `<div id="footer">
 <div id="footer-text">
     Copyright (c) 2023 轩哥啊哈OvO&emsp;All rights reserved.
     <br>
@@ -8,4 +8,6 @@ document.writeln(`<div id="footer">
     <a href="https://github.com/Xuangeaha/xuangeaha.github.io" class="bottom">源代码仓库</a>
     </div>
 </div>
-</div>`)
+</div>`
+
+document.writeln(footer)
