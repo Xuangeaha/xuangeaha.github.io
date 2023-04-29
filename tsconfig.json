@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "strict": true
+    },
+    "include": [
+        // 表示编译src目录下的所有ts文件
+        "./src/*"
+    ]
+}
