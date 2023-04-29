@@ -1009,6 +1009,7 @@ body.toc2 #header>h1:nth-last-child(2) {
 
 #footer-text {
     color: hsla(0, 0%, 100%, .8);
+    font-family: sans-serif;
     line-height: 1.44;
 }
 

@@ -35,11 +35,21 @@
     margin-left: 49%;
 }
 
+.header-text {
+    color: #d6d6d6;
+    font: 18px sans-serif;
+    text-align: left;}
+
 .back {
+    color: #d6d6d6;
     float: right;
-    width: 13%;
-    font: 20px sans-serif;
+    font: sans-serif;
     text-align: left;
+}
+
+.back:hover,
+.back:focus {
+    color: #1d4b8f;
 }
 
 .indent {
