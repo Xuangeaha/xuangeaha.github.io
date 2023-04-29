@@ -1,0 +1,77 @@
+<link rel="stylesheet" type="text/css" href="css/xuan.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="src/chartData.js"></script>
+
+
+<div class="all">
+    <div class="divider"></div>
+    <div class="left">
+        全网总点击量
+        <div id="clickAll"></div>
+        <script>
+            document.getElementById("clickAll").innerHTML = clickAll.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        </script>
+    </div>
+    <div class="right">
+        全网总粉丝量
+        <div id="followerAll"></div>
+        <script>
+            document.getElementById("followerAll").innerHTML = followerAll.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        </script>
+    </div>
+</div>
+
+<div class="left">
+    <canvas id="clickgraph" width="3" height="2"></canvas>
+    <script>
+        var ctx = document.getElementById('clickgraph').getContext('2d');
+        var chart = new Chart(ctx, {
+            // 要创建的图表类型
+            type: 'doughnut',
+
+            // 数据集
+            data: {
+                labels: clickLabel,
+                datasets: [{
+                    backgroundColor: doughnutBackgroundColor,
+                    data: clickData,
+                }]
+            },
+
+            // 配置选项
+            options: {
+                title: {
+                    display: true,
+                    text: "各平台点击量分布（个）"
+                }
+            }
+        });
+    </script>
+</div>
+<div class="right">
+    <canvas id="followergraph" width="3" height="2"></canvas>
+    <script>
+        var ctx = document.getElementById('followergraph').getContext('2d');
+        var chart = new Chart(ctx, {
+            // 要创建的图表类型
+            type: 'doughnut',
+
+            // 数据集
+            data: {
+                labels: followerLabel,
+                datasets: [{
+                    backgroundColor: doughnutBackgroundColor,
+                    data: followerData,
+                }]
+            },
+
+            // 配置选项
+            options: {
+                title: {
+                    display: true,
+                    text: "各平台粉丝量分布（个）"
+                }
+            }
+        });
+    </script>
+</div>
