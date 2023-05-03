@@ -20,9 +20,10 @@
 <script>
     function adjustIframe() {
         var iframe = document.getElementById("chatgpt");
-        iframe.height = document.documentElement.clientHeight - 158;
+        iframe.height = document.documentElement.clientHeight;
         iframe.width = document.documentElement.clientWidth;
     }
+
 </script>
 
 <iframe id="chatgpt" src="https://chat.jinshutuan.com/" onload="adjustIframe();" frameborder="0" scrolling="auto">
