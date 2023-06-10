@@ -1,12 +1,12 @@
 // 点击量饼图数据
 const clickLabel = ["哔哩哔哩(大号 播放量)", "哔哩哔哩(大号 阅读量)", "哔哩哔哩(小号 播放量)", "哔哩哔哩(小号 阅读量)", "知乎", "CSDN", "VSMarketplace"];
-const clickData = [251418, 52928, 194307, 54676, 134669, 267040, 71631];
+const clickData = [251418, 52928, 194307, 54676, 134669, 272968, 71631];
 
 // 点击量求和
 var clickAll = 0;
 for (let i = 0; i < clickData.length; i++) {
     clickAll += clickData[i];
-}
+} 
 
 // 粉丝量饼图数据
 const followerLabel = ["哔哩哔哩(大号)", "哔哩哔哩(小号)", "知乎", "CSDN"];
