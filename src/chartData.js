@@ -1,6 +1,6 @@
 // 点击量饼图数据
-const clickLabel = ["哔哩哔哩(大号 播放量)", "哔哩哔哩(大号 阅读量)", "哔哩哔哩(小号 播放量)", "哔哩哔哩(小号 阅读量)", "知乎", "CSDN", "VSMarketplace"];
-const clickData = [251418, 52928, 194307, 54676, 134669, 272968, 71631];
+const clickLabel = ["CSDN", "哔哩哔哩(大号 播放量)", "哔哩哔哩(小号 播放量)", "知乎", "VSMarketplace"];
+const clickData = [564104, 268184, 214997, 245426, 251675];
 
 // 点击量求和
 var clickAll = 0;
@@ -10,7 +10,7 @@ for (let i = 0; i < clickData.length; i++) {
 
 // 粉丝量饼图数据
 const followerLabel = ["哔哩哔哩(大号)", "哔哩哔哩(小号)", "知乎", "CSDN"];
-const followerData = [1306, 479, 62, 223];
+const followerData = [1324, 554, 133, 303];
 
 // 点击量求和
 var followerAll = 0;
@@ -19,18 +19,17 @@ for (let i = 0; i < followerData.length; i++) {
 }
 
 // 饼图背景色
-const doughnutBackgroundColor = ["rgba(255, 99, 132)", "rgba(255, 159, 64)", "rgba(255, 205, 86)", "rgba(75, 192, 192)", "rgba(54, 162, 235)", "rgba(153, 102, 255)", "rgba(201, 203, 207)"]
+const doughnutBackgroundColor = ["rgba(255, 99, 132)", "rgba(255, 159, 64)", "rgba(255, 205, 86)", "rgba(75, 192, 192)", "rgba(54, 162, 235)"];
 
 // VSCode扩展折线图数据
-const date = ["5月22日", "5月23日", "5月24日", "5月25日", "5月26日", "5月27日", "5月28日",
-    "5月29日", "5月30日", "5月31日", "6月1日", "6月2日", "6月3日"];
-const jeiData = [3381, 3405, 3429, 3453, 3477, 3501, 3525,
-    3549, 3573, 3597, 3621, 3645, 3700];
-const pdData = [3194, 3225, 3256, 3287, 3318, 3349, 3380,
-    3411, 3442, 3473, 3504, 3535, 3577];
-const vsbData = [15456, 15695, 15934, 16173, 16412, 16651, 16890,
-    17129, 17368, 17607, 17846, 18070, 18234];
-const jpiData = [12370, 12530, 12690, 12882, 13074, 13266, 13458,
-    13650, 13842, 14034, 14240, 14460, 14757,];
-const cjsData = [1801, 1842, 1883, 1924, 1965, 2006, 2047,
-    2088, 2129, 2170, 2211, 2248, 2262]
+const date = ["-7 Day", "-6 Day", "-5 Day", "-4 Day", "-3 Day", "-2 Day", "-1 Day", "今日"];
+const jei = 17676
+const pd = 15809
+const vsb = 99968
+const jpi = 99652
+const cjs = 18770
+const jeiData = [jei-700, jei-600, jei-500, jei-400, jei-300, jei-200, jei-100, jei];
+const pdData = [pd-700, pd-600, pd-500, pd-400, pd-300, pd-200, pd-100, pd];
+const vsbData = [vsb-700, vsb-600, vsb-500, vsb-400, vsb-300, vsb-200, vsb-100, vsb];
+const jpiData = [jpi-700, jpi-600, jpi-500, jpi-400, jpi-300, jpi-200, jpi-100, jpi];
+const cjsData = [cjs-700, cjs-600, cjs-500, cjs-400, cjs-300, cjs-200, cjs-100, cjs];
