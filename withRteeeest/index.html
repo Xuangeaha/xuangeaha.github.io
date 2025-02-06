@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Moment</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 1s ease;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        /* 输入容器 */
+        .input-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* 输入框样式 */
+        #secret-input {
+            width: 220px;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #secret-input:focus {
+            border-color: #ff6b6b;
+        }
+
+        /* 按钮样式 */
+        #submit-btn {
+            padding: 12px 30px;
+            background: #ff6b6b;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #submit-btn:hover {
+            transform: scale(1.05);
+            background: #ff5252;
+        }
+
+        /* 诗歌容器 */
+        .poem-container {
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            max-width: 600px;
+            padding: 30px;
+            line-height: 1.6;
+            pointer-events: none;
+        }
+
+        /* 诗歌文字 */
+        .poem-line {
+            opacity: 0;
+            transform: translateY(20px);
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #333;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 背景图片 */
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .input-container {
+                width: 90%;
+            }
+            #secret-input {
+                width: 100%;
+            }
+            .poem-container {
+                padding: 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景图片 -->
+    <img src="你的背景图片URL" alt="浪漫背景" class="background-image">
+
+    <!-- 输入容器 -->
+    <div class="input-container">
+        <input type="text" id="secret-input" placeholder="请输入爱的密码">
+        <br>
+        <button id="submit-btn">开启我们的故事</button>
+    </div>
+
+    <!-- 诗歌容器 -->
+    <div class="poem-container">
+        <!-- 替换为你写的英文诗 -->
+        <div class="poem-line">In the garden of time, our souls entwined,</div>
+        <div class="poem-line">Two heartbeats dancing, perfectly aligned.</div>
+        <div class="poem-line">Through seasons' change and stars that shine,</div>
+        <div class="poem-line">This love of ours, eternal and divine.</div>
+        <div class="poem-line">❤️</div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const input = document.getElementById('secret-input').value;
+            // 替换为你的实际生日验证逻辑（12位数字）
+            if (input === "你的12位生日组合") {
+                // 渐隐输入容器
+                document.querySelector('.input-container').style.opacity = '0';
+                document.querySelector('.input-container').style.pointerEvents = 'none';
+
+                // 显示背景和诗歌
+                setTimeout(() => {
+                    document.querySelector('.background-image').style.opacity = '0.2';
+                    document.querySelector('.poem-container').style.opacity = '1';
+                    
+                    // 逐行显示诗歌
+                    const lines = document.querySelectorAll('.poem-line');
+                    lines.forEach((line, index) => {
+                        setTimeout(() => {
+                            line.style.opacity = '1';
+                            line.style.transform = 'translateY(0)';
+                        }, index * 800); // 每行间隔时间
+                    });
+                }, 1000);
+            } else {
+                alert('密码错误，请再试一次哦～');
+                document.getElementById('secret-input').style.borderColor = '#ff6b6b';
+                setTimeout(() => {
+                    document.getElementById('secret-input').style.borderColor = '#e0e0e0';
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
