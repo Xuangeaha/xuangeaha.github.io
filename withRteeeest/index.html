@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+<!-- MIT LICENSE | DOCTYPE HTML -->
+<!-- @Time: 2025-02-06 20:19:05 (UTC+8) -->
+<!-- -->
 <!-- 她估计用safari浏览器访问吧 要是不是呢 没事好像可以通配 -->
-<!-- 啊啊啊好担心safari能不能访问github pages。。。为什么我的被挡了算了先写了再说吧。。。 -->
-<!-- 我真的服了 怎么样把协议申请到2545年 这下拉框怎么只到2099年-->
-<!-- 成功了哈哈哈哈！ 但愿2545年人类还在 你我还在-->
+<!-- 啊啊啊好担心safari能不能访问github pages。。。为什么我手机自带浏览器会被挡 算了先写了再说吧。。。 -->
+<!-- 我真的服了 怎么样把协议申请到2545年 这下拉框怎么只到2099年 -->
+<!-- 成功了哈哈哈哈！ 但愿2545年人类还在 你我还在 -->
 <!-- 自己写的代码越看越喜欢哈哈哈 -->
+<!-- 这注释就不删了吧 可爱的Rteeeest绝对不会按F12打开开发者工具看到这些 -->
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +23,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* 不了解苹果呜呜呜 */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -30,13 +34,13 @@
 
         /* 输入容器 */
         .input-container {
-            position: relative;
+            position: fixed;
             z-index: 2;
             text-align: center;
-            padding: 20px;
+            padding: 20px 30px;
             background: rgba(255,255,255,0.9);
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         /* 输入框样式 */
@@ -77,19 +81,21 @@
             opacity: 0;
             z-index: 1;
             max-width: 600px;
+            max-height: 90vh; /* 限制最大高度 嗯我不希望有几行被吞了 */
             padding: 30px;
-            line-height: 1.6;
+            line-height: 1.2;
             pointer-events: none;
+            -webkit-overflow-scrolling: touch; /* 优化移动端滚动 但safari可能没效果*/
         }
 
         /* 诗歌文字 */
         .poem-line {
             opacity: 0;
             transform: translateY(20px);
-            margin: 15px 0;
-            font-size: 1.2em;
+            margin: 5px 0;
+            font-size: 1.1em;
             color: #333;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
         /* 背景图片 */
@@ -104,58 +110,106 @@
             object-fit: cover;
         }
 
+        /* 徽章容器 */
+        .badge-container {
+            position: fixed; 
+            bottom: 10px; 
+            z-index: 999; 
+            transition: opacity 1s ease;
+        }
+
         /* 响应式布局 */
         @media (max-width: 768px) {
             .input-container {
-                width: 90%;
+                width: 80%;
             }
             #secret-input {
                 width: 100%;
             }
             .poem-container {
+                max-height: 90vh; /* 移动端高度小 */
                 padding: 20px;
                 font-size: 0.9em;
+                width: 80%; /* 增加宽度 */
             }
         }
+
     </style>
 </head>
 <body>
     <!-- 背景图片 -->
-    <img src="你的背景图片URL" alt="背景" class="background-image">
+    <img src="https://i0.hdslb.com/bfs/new_dyn/e3b8c1140cc910d61261069e9c271525401742377.jpg" alt="背景" class="background-image">
 
     <!-- 输入容器 -->
     <div class="input-container">
-        临时页面 - 轩哥啊哈OvO的官方网站
-        <br><br>
-        <input type="text" id="secret-input" placeholder="请输入Token">
-        <br>
+        传送门 - 轩哥啊哈OvO的官方网站<br>
+        <input type="text" id="secret-input" placeholder="请输入Token"><br>
         <button id="submit-btn">提交</button>
     </div>
 
     <!-- 诗歌容器 -->
     <div class="poem-container">
         <!-- 诗 -->
-        <div class="poem-line">In the garden of time, our souls entwined,</div>
-        <div class="poem-line">Two heartbeats dancing, perfectly aligned.</div>
-        <div class="poem-line">Through seasons' change and stars that shine,</div>
-        <div class="poem-line">This love of ours, eternal and divine.</div>
-        <div class="poem-line">❤️</div>
+        <div class="poem-line">Stars compute their ancient dance,  </div>
+        <div class="poem-line">No bold claim of permanence—  </div>
+        <div class="poem-line">Yet nightly etch their silver trance  </div>
+        <div class="poem-line">Through cosmic clocks' obedience.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">Tides keep faith with lunar law,  </div>
+        <div class="poem-line">No vows carved in briny jaw—  </div>
+        <div class="poem-line">Their salted chronicles withdraw  </div>
+        <div class="poem-line">To rewrite love's encore.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">We've watched twelve full moons conspire  </div>
+        <div class="poem-line">To melt time's wax through shared fire,  </div>
+        <div class="poem-line">Each sunset's cryptographic pyre  </div>
+        <div class="poem-line">Decoding transient desire.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">This algebra of chance we hold:  </div>
+        <div class="poem-line">Your laughter's golden ratio,  </div>
+        <div class="poem-line">My pulse's Fibonacci flow—  </div>
+        <div class="poem-line">Two fractals learning how to glow.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">Through quantum dawns we'll gently spin  </div>
+        <div class="poem-line">Where light-years bloom within your skin,  </div>
+        <div class="poem-line">Each photon path you summon in  </div>
+        <div class="poem-line">Makes eternity begin...  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">The supernova dares not speak  </div>
+        <div class="poem-line">Of endless roads that star-shells seek—  </div>
+        <div class="poem-line">Yet in its pulse-arcs, week to week,  </div>
+        <div class="poem-line">Writes light-years in galactic Greek.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">Your prism splits my spectral night,  </div>
+        <div class="poem-line">We compute dawn in shared light—  </div>
+        <div class="poem-line">Two stars that learned to bend time right  </div>
+        <div class="poem-line">Through superposed delight.</div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">
+        <img src="https://s1.aigei.com/src/img/gif/38/38333c800ec54b688f307c12848b137b.gif?imageMogr2/auto-orient/thumbnail/!282x282r/gravity/Center/crop/282x282/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:q0ZuaDFsun1eB0ynP6cR4zq1ejU=" width=60%></div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line"><br></div>
     </div>
 
     <!-- 徽章容器 -->
-    <div class="badge-container" style="position: fixed; bottom: 10px; z-index: 999;">
-        <img src="https://img.shields.io/badge/MIT License Valid-2545&ndash;12&ndash;31  15:59:59%20&lpar;UTC+0&rpar;-blue" alt="CC BY-NC License">
+    <div class="badge-container">
+        <img src="https://img.shields.io/badge/MIT License Valid-2545&ndash;12&ndash;31  15:59:59%20&lpar;UTC+0&rpar;-blue" alt="MIT License">
     </div>
 
     <script>
         document.getElementById('submit-btn').addEventListener('click', function() {
             const input = document.getElementById('secret-input').value;
-            if (input === "071212071220" || input === "071220071212") {
+            if (input === "0" || input === "1") {
                 // 渐隐输入容器
                 document.querySelector('.input-container').style.opacity = '0';
                 document.querySelector('.input-container').style.pointerEvents = 'none';
                 document.querySelector('.badge-container').style.opacity = '0';
                 document.querySelector('.badge-container').style.pointerEvents = 'none';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // 平滑滚动
+                });
 
                 // 显示背景和诗歌
                 setTimeout(() => {
@@ -168,7 +222,7 @@
                         setTimeout(() => {
                             line.style.opacity = '1';
                             line.style.transform = 'translateY(0)';
-                        }, index * 800); // 每行间隔时间
+                        }, index * 400); // 每行间隔时间
                     });
                 }, 1000);
             } else {
