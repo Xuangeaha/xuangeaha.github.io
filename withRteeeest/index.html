@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<!-- MIT LICENSE | DOCTYPE HTML -->
+<!-- @Start Time: 2025-02-06 20:19:05 (UTC+8) -->
+<!-- -->
+<!-- 她估计用safari浏览器访问吧 要是不是呢 没事写通配的吧 -->
+<!-- 啊啊啊好担心safari能不能访问github pages。。。为什么我手机自带浏览器会被挡 算了先写了再说吧。。。 -->
+<!-- 可能要用流量。。 -->
+<!-- 我真的服了 怎么样把协议申请到2545年 这下拉框怎么只到2099年 -->
+<!-- 成功了哈哈哈哈！ 但愿2545年人类还在 你我还在 一定会的 -->
+<!-- 自己写的代码越看越喜欢哈哈哈 -->
+<!-- 我可爱的线条小狗啊 你这么可爱怎么点你就是没反应呢 -->
+<!-- 给我自己蠢笑了哈哈哈 -->
+<!-- 可爱的Rteeeest绝对不会打开F12看到这些 这注释就不删了吧 -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Rteeeest - 轩哥啊哈OvO的官方网站</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 1s ease;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* 不了解苹果呜呜呜 */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        /* 输入容器 */
+        .input-container {
+            position: fixed;
+            z-index: 2;
+            text-align: center;
+            padding: 20px 30px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* 输入框样式 */
+        #secret-input {
+            width: 220px;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #secret-input:focus {
+            border-color: #ff6b6b;
+        }
+
+        /* 按钮样式 */
+        #submit-btn {
+            padding: 12px 30px;
+            background: #ff6b6b;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #submit-btn:hover {
+            transform: scale(1.05);
+            background: #ff5252;
+        }
+
+        /* 诗歌容器 */
+        .poem-container {
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+            max-width: 600px;
+            max-height: 90vh; /* 限制最大高度 不然开头几行被吞了 */
+            padding: 30px;
+            line-height: 1.2;
+            -webkit-overflow-scrolling: touch; /* 优化移动端滚动 但safari可能没效果 */
+        }
+
+        /* 诗歌文字 */
+        .poem-line {
+            opacity: 0;
+            transform: translateY(20px);
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #333;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        /* 背景图片 */
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 0;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        /* 徽章容器 */
+        .badge-container {
+            position: fixed; 
+            bottom: 10px; 
+            z-index: 9; 
+            transition: opacity 1s ease;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .input-container {
+                width: 80%;
+            }
+            #secret-input {
+                width: 100%;
+            }
+            .poem-container {
+                max-height: ;t: 90vh; /* 移动端高度小 */
+                padding: 20px;
+                font-size: 0.9em;
+                width: 80%; /* 增加宽度 */
+            }
+            #dogImage {
+                width: 65%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 背景图片 -->
+    <img src="background.png" alt="背景" class="background-image"> 
+
+    <!-- 输入容器 -->
+    <div class="input-container">
+        传送门 - 轩哥啊哈OvO的官方网站<br>
+        <input type="text" id="secret-input" placeholder="请输入 Token"><br>
+        <button id="submit-btn">提交</button>
+    </div>
+
+    <!-- 诗歌容器 -->
+    <div class="poem-container">
+        <!-- 诗 -->
+        <div class="poem-line">Stars compute their ancient dance,  </div>
+        <div class="poem-line">No bold claim of permanence—  </div>
+        <div class="poem-line">Yet nightly etch their silver trance  </div>
+        <div class="poem-line">Through cosmic clocks' obedience.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">Tides keep faith with lunar law,  </div>
+        <div class="poem-line">No vows carved in briny jaw—  </div>
+        <div class="poem-line">Their salted chronicles withdraw  </div>
+        <div class="poem-line">To rewrite love's encore.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">We've watched twelve full moons conspire  </div>
+        <div class="poem-line">To melt time's wax through shared fire,  </div>
+        <div class="poem-line">Each sunset's cryptographic pyre  </div>
+        <div class="poem-line">Decoding transient desire.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">This algebra of chance we hold:  </div>
+        <div class="poem-line">Your laughter's golden ratio,  </div>
+        <div class="poem-line">My pulse's Fibonacci flow—  </div>
+        <div class="poem-line">Two fractals learning how to glow.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">Through quantum dawns we'll gently spin  </div>
+        <div class="poem-line">Where light-years bloom within your skin,  </div>
+        <div class="poem-line">Each photon path you summon in  </div>
+        <div class="poem-line">Makes eternity begin...  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">The supernova dares not speak  </div>
+        <div class="poem-line">Of endless roads that star-shells seek—  </div>
+        <div class="poem-line">Yet in its pulse-arcs, week to week,  </div>
+        <div class="poem-line">Writes light-years in galactic Greek.  </div>
+        <div class="poem-line"><br></div>
+        <div class="poem-line">Your prism splits my spectral night,  </div>
+        <div class="poem-line">We compute dawn in shared light—  </div>
+        <div class="poem-line">Two stars that learned to bend time right  </div>
+        <div class="poem-line">Through superposed delight.</div>
+        <div class="poem-line">
+        <img id='dogImage' src="dog-init.png" width=60%><br><br></div>
+    </div>
+
+    <!-- 徽章容器 -->
+    <div class="badge-container">
+        <img src="https://img.shields.io/badge/MIT License Valid-2545&ndash;12&ndash;31  15:59:59%20&lpar;UTC+0&rpar;-blue" alt="MIT License">
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const input = document.getElementById('secret-input').value;
+            if (input === "0" || input === "1") {
+                document.querySelector('.input-container').style.opacity = '0'; // 渐隐输入容器
+                document.querySelector('.input-container').style.pointerEvents = 'none';
+                document.querySelector('.badge-container').style.opacity = '0';
+                document.querySelector('.badge-container').style.pointerEvents = 'none';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // 平滑优雅地滚回顶部。避免Rteeeest手欠。
+                });
+
+                setTimeout(() => {
+                    document.querySelector('.background-image').style.opacity = '0.65';
+                    document.querySelector('.poem-container').style.opacity = '1';
+                    
+                    const lines = document.querySelectorAll('.poem-line'); // 逐行显示诗歌
+                    lines.forEach((line, index) => {
+                        setTimeout(() => {
+                            line.style.opacity = '1';
+                            line.style.transform = 'translateY(0)';
+                        }, index * 200); // 每行间隔时间
+                    });
+                }, 1000);
+            } else {
+                alert('Token错误，请重试~'); // 这密钥如果能输错我会嘲笑你的
+                document.getElementById('secret-input').style.borderColor = '#ff6b6b';
+                setTimeout(() => {
+                    document.getElementById('secret-input').style.borderColor = '#e0e0e0';
+                }, 1000);
+            }
+        });
+
+        // 邀诸位共赏：半个多小时，五行代码
+
+        function dogBlowBubbles() { // 哈哈哈我可爱的线条小狗你快动起来啊
+            this.src = 'dog.gif'; // 切换动态图片
+            setTimeout(() => {
+                this.src = 'dog-init.png'; // 定时器到期后切换回第一帧
+            }, 2500); // 我服了忘了自己把poem-container里鼠标事件锁了 在这人机了半天
+        };
+
+        document.getElementById('dogImage').addEventListener('click', dogBlowBubbles)  
+    </script>
+</body>
+</html>
+<!-- 2月10号。祝我好运。 -->
+<!-- @Last Commit Time: 2025-02-09 23:44:11 (UTC+8) -->
