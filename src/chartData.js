@@ -1,6 +1,6 @@
 // 点击量饼图数据
 const clickLabel = ["CSDN", "哔哩哔哩(大号 播放量)", "哔哩哔哩(小号 播放量)", "知乎", "VSMarketplace"];
-const clickData = [583337, 270319, 217814, 255305, 299791];
+const clickData = [595806, 272375, 223212, 272260, 412246];
 
 // 点击量求和
 var clickAll = 0;
@@ -9,8 +9,8 @@ for (let i = 0; i < clickData.length; i++) {
 } 
 
 // 粉丝量饼图数据
-const followerLabel = ["哔哩哔哩(大号)", "哔哩哔哩(小号)", "知乎", "CSDN"];
-const followerData = [1323, 557, 138, 319];
+const followerLabel = ["哔哩哔哩", "网易云音乐", "知乎", "CSDN"];
+const followerData = [1870, 331, 141, 324];
 
 // 点击量求和
 var followerAll = 0;
@@ -23,11 +23,11 @@ const doughnutBackgroundColor = ["rgba(255, 99, 132)", "rgba(255, 159, 64)", "rg
 
 // VSCode扩展折线图数据
 const date = ["-7 Day", "-6 Day", "-5 Day", "-4 Day", "-3 Day", "-2 Day", "-1 Day", "今日"];
-const jei = 20490
-const pd = 18154
-const vsb = 115393
-const jpi = 122259
-const cjs = 22476
+const jei = 26488
+const pd = 22791
+const vsb = 145468
+const jpi = 191182
+const cjs = 26347
 const jeiData = [jei - 700, jei - 600, jei - 500, jei - 400, jei - 300, jei - 200, jei - 100, jei];
 const pdData = [pd - 700, pd - 600, pd - 500, pd - 400, pd - 300, pd - 200, pd - 100, pd];
 const vsbData = [vsb - 700, vsb - 600, vsb - 500, vsb - 400, vsb - 300, vsb - 200, vsb - 100, vsb];
