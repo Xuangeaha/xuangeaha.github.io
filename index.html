@@ -16,22 +16,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="src/chartData.js"></script>
-
-    <script>
-        const redirectMap = {
-            "gwj.xuangeaha.xyz": "http://www.xuangeaha.xyz/withRteeeest"
-        };
-
-        const currentDomain = window.location.hostname.toLowerCase();
-        console.log("当前域名：" + currentDomain); // 打印当前域名
-        console.log("重定向映射：" + JSON.stringify(redirectMap)); // 打印重定向映射
-        console.log("重定向目标：" + redirectMap[currentDomain]); // 打印重定向目标
-        const targetUrl = redirectMap[currentDomain]
-
-        if (targetUrl) {
-            window.location.href = targetUrl;
-        }
-    </script>
 </head>
 
 <body class="XuanMain">
