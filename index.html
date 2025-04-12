@@ -19,11 +19,11 @@
 
     <script>
         const redirectMap = {
-            "gwj.xuangeaha.xyz": "https://www.xuangeaha.xyz/withRteeeest"
+            "gwj.xuangeaha.xyz": "http://www.xuangeaha.xyz/withRteeeest"
         };
 
         const currentDomain = window.location.hostname.toLowerCase();
-        const targetUrl = redirectMap[currentDomain];
+        const targetUrl = redirectMap[currentDomain] || "http://www.xuangeaha.xyz";
 
         if (targetUrl) {
             window.location.href = targetUrl;
