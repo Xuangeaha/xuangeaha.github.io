@@ -1,6 +1,6 @@
 // 点击量饼图数据
-const clickLabel = ["CSDN", "哔哩哔哩(大号 播放量)", "哔哩哔哩(小号 播放量)", "知乎", "VSMarketplace"];
-const clickData = [595806, 272375, 223212, 272260, 412246];
+const clickLabel = ["CSDN", "哔哩哔哩 Bilibili(卡猫kat)", "哔哩哔哩 Bilibili(旧号-轩哥啊哈OvO)", "VSMarketplace"];
+const clickData = [614492, 387511, 275690, 487048];
 
 // 点击量求和
 var clickAll = 0;
@@ -9,8 +9,8 @@ for (let i = 0; i < clickData.length; i++) {
 } 
 
 // 粉丝量饼图数据
-const followerLabel = ["哔哩哔哩", "网易云音乐", "知乎", "CSDN"];
-const followerData = [1870, 331, 141, 324];
+const followerLabel = ["哔哩哔哩 Bilibili", "网易云音乐 Netease Cloud Music", "CSDN"];
+const followerData = [1913, 404, 324];
 
 // 点击量求和
 var followerAll = 0;
@@ -19,7 +19,7 @@ for (let i = 0; i < followerData.length; i++) {
 }
 
 // 饼图背景色
-const doughnutBackgroundColor = ["rgba(255, 99, 132)", "rgba(255, 159, 64)", "rgba(255, 205, 86)", "rgba(75, 192, 192)", "rgba(54, 162, 235)"];
+const doughnutBackgroundColor = ["rgba(255, 99, 132)", "rgba(255, 159, 64)", "rgba(75, 192, 192)", "rgba(54, 162, 235)", "rgba(255, 205, 86)"];
 
 // VSCode扩展折线图数据
 const date = ["-7 Day", "-6 Day", "-5 Day", "-4 Day", "-3 Day", "-2 Day", "-1 Day", "今日"];
