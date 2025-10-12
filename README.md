@@ -5,14 +5,10 @@
     <meta name="keywords" content="轩哥啊哈,轩哥啊哈OvO,xuangeaha,xuange-aha,卡猫kat,python,pip,pyinstaller,tkinter,pyqt,java">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>轩哥啊哈OvO的官方网站</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/xuan.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script type="text/javascript" src="src/chartData.js"></script>
 </head>
 
 <body class="XuanMain">
