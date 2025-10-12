@@ -18,7 +18,6 @@
                 alt="轩哥啊哈OvO">
         </div>
         <h1>轩哥啊哈OvO的官方网站</h1>
-        <br>
         <div class="introduction">
             <p>
                 &nbsp;XuangeAha (卡猫kat / KamaoKat)</p>
