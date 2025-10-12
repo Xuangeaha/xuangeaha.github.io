@@ -12,8 +12,6 @@
 </head>
 
 <body class="XuanMain">
-    <div id="publicHeader"></div>
-    <script src="src/header.js"></script>
     <div id="header">
         <div class="righticon">
             <img src="xuangeaha.jpg" width="200"
