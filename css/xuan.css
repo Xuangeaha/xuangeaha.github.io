@@ -13,6 +13,11 @@
     width: 12%;
 }
 
+.rightwish {
+    float: right;
+    width: 18%;
+}
+
 .all {
     position: relative;
     text-align: center;
