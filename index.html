@@ -19,7 +19,10 @@
     <script>
         // 自动将裸域名重定向到www域名
         if (window.location.hostname === 'xuangeaha.xyz') {
-            window.location.href = 'https://www.xuangeaha.xyz' + window.location.pathname + window.location.search;
+            window.location.href = 'https://www.xuangeaha.xyz';
+        }
+        if (window.location.href.includes('/chat/')) {
+            window.location.href = "https://chat.xuangeaha.xyz";
         }
     </script>
 </head>
@@ -29,7 +32,7 @@
     <script src="src/header.js"></script>
     <div id="header">
         <div class="righticon">
-            <img src="xuangeaha.jpg" width="200" alt="轩哥啊哈OvO">
+            <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha.jpg" width="200" alt="轩哥啊哈OvO">
         </div>
         <h1>轩哥啊哈OvO的官方网站</h1>
         <br>
@@ -60,7 +63,7 @@
                     CSDN&emsp;
                 </a>
                 <a href="https://github.com/Xuangeaha">
-                    <img src="assets/image/github/favicon.ico" width="22" alt="Github">
+                    <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/github/favicon.ico" width="22" alt="Github">
                     Github&emsp;
                 </a>
                 <!--
@@ -74,7 +77,7 @@
                 </a>
                 -->
                 <a href="https://marketplace.visualstudio.com/publishers/XuangeAha">
-                    <img src="assets/image/vsce/favicon.ico" width="22" alt="Visual Studio Marketplace">
+                    <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/favicon.ico" width="22" alt="Visual Studio Marketplace">
                     Visual Studio Marketplace&emsp;
                 </a>
                 <a href="https://music.163.com/#/user/home?id=8644137167">
@@ -110,7 +113,7 @@
             <div class="sectionbody">
                 <div class="paragraph">
                     <div class="all">
-                        <div class="divider"></div>
+                        <div class="divider media_on"></div>
                         <div class="left">
                             全网总点击量 Total Views（2025/10）
                             <div id="clickAll"></div>
@@ -185,7 +188,7 @@
                 </script>
             </div>
         </div>
-        &emsp;
+        <br>
         <hr>
         <div class="sect1">
             <div class="sidebarblock">
@@ -211,7 +214,7 @@
             </div>
                 <div class="sectionbody">
                     <div class="paragraph">
-                        <h4>苹果点点乐（Apple Clicker）</h4>
+                        <h3>苹果点点乐（Apple Clicker）</h3>
                         <p>
                             基于Python的放置类游戏，灵感来源于Orteil开发的JavaScript游戏《饼干点点乐（Cookie Clicker）》。<br>
                             和饼干点点乐类似，这也是一个“无尽”的游戏。玩家需要通过点击苹果、购买建筑、升级等方式来获取无穷无尽的苹果。
@@ -225,11 +228,11 @@
         </div>
         <hr>
         <div class="sect1">
-            <h2 id="_vscode_extensions"><img src="assets/image/vsce/favicon.ico" width="40"
+            <h2 id="_vscode_extensions"><img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/favicon.ico" width="40"
                     alt="VSCode 扩展">&nbsp;&nbsp;VSCode
                 扩展</h2>
             <div class="sectionbody">
-                <canvas id="vscegraph" width="300" height="130"></canvas>
+                <canvas class="media_on" id="vscegraph" height="130px"></canvas>
                 <script>
                     var ctx = document.getElementById('vscegraph');
                     var chart = new Chart(ctx, {
@@ -283,7 +286,7 @@
                 </script>
                 <div class="paragraph">
                     <div class="righticon">
-                        <img src="assets/image/vsce/Just-Enough-Git.png" width="110" alt="Just Enough Git">
+                        <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/Just-Enough-Git.png" width="110" alt="Just Enough Git">
                     </div>
                     <h4>Just Enough Git</h4>
                     <p>
@@ -303,7 +306,7 @@
                 <hr>
                 <div class="paragraph">
                     <div class="righticon">
-                        <img src="assets/image/vsce/Print-Divider.png" width="100" alt="Print Divider">
+                        <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/Print-Divider.png" width="100" alt="Print Divider">
                     </div>
                     <h4>Print Divider</h4>
                     <p>
@@ -324,7 +327,7 @@
                 <hr>
                 <div class="paragraph">
                     <div class="righticon">
-                        <img src="assets/image/vsce/VSMarketplace-Badges.png" width="110" alt="VSMarketplace Badges">
+                        <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/VSMarketplace-Badges.png" width="110" alt="VSMarketplace Badges">
                     </div>
                     <h4>VSMarketplace Badges</h4>
                     <p>
@@ -342,7 +345,7 @@
                 <hr>
                 <div class="paragraph">
                     <div class="righticon">
-                        <img src="assets/image/vsce/Just-Print-It.png" width="100" alt="Just Print It">
+                        <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/Just-Print-It.png" width="100" alt="Just Print It">
                     </div>
                     <h4>Just Print It</h4>
                     <p>
@@ -364,7 +367,7 @@
                 <hr>
                 <div class="paragraph">
                     <div class="righticon">
-                        <img src="assets/image/vsce/Chart.js.png" width="100" alt="Chart.js">
+                        <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/vsce/Chart.js.png" width="100" alt="Chart.js">
                     </div>
                     <h4>Chart.js</h4>
                     <p>
@@ -383,7 +386,7 @@
             </div>
         </div>
         <div class="sect1">
-            <h2 id="_sunflower_treasure_book"><img src="assets/image/sunflower/sunflower.jpg" width="50"
+            <h2 id="_sunflower_treasure_book"><img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/sunflower/sunflower.jpg" width="50"
                     alt="葵花宝典">&nbsp;&nbsp;葵花宝典 Tools</h2>
             <div class="sectionbody">
                 <div class="paragraph">
@@ -408,7 +411,7 @@
                     </p>
                     <h3>&nbsp;&nbsp;编程宝库</h3>
                     <p>
-                        &emsp;&emsp;<b><img src="assets/image/java/favicon.ico" width="20"
+                        &emsp;&emsp;<b><img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/java/favicon.ico" width="20"
                                 alt="JDK镜像下载">&nbsp;&nbsp;JDK镜像下载</b>
                         &emsp;<a href="https://www.123pan.com/s/94VA-ShkVv">JDK-19</a>
                         &emsp;<a href="https://www.123pan.com/s/94VA-PBkVv">JDK-17.0.6
@@ -420,15 +423,15 @@
                     </p>
                     <p>
                         &emsp;&emsp;<a href="https://registry.npmmirror.com/binary.html?path=python/">
-                            <img src="assets/image/python/favicon.ico" width="20"
+                            <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/python/favicon.ico" width="20"
                                 alt="Python镜像下载">&nbsp;&nbsp;Python镜像下载</a>
                         &emsp;&emsp;<a href="https://registry.npmmirror.com/binary.html?path=node/">
-                            <img src="assets/image/node.js/favicon.png" width="20"
+                            <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/node.js/favicon.png" width="20"
                                 alt="Node.js镜像下载">&nbsp;&nbsp;Node.js镜像下载</a>
                         &emsp;&emsp;<a href="https://registry.npmmirror.com/binary.html?path=npm/">
-                            <img src="assets/image/npm/favicon.png" width="20" alt="npm镜像下载">&nbsp;&nbsp;npm镜像下载</a>
+                            <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/npm/favicon.png" width="20" alt="npm镜像下载">&nbsp;&nbsp;npm镜像下载</a>
                         &emsp;&emsp;<a href="https://registry.npmmirror.com/binary.html?path=git-for-windows/">
-                            <img src="assets/image/git/favicon.ico" width="20" alt="Git for Windows镜像下载">&nbsp;&nbsp;Git
+                            <img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/git/favicon.ico" width="20" alt="Git for Windows镜像下载">&nbsp;&nbsp;Git
                             for Windows镜像下载</a>
                     </p>
 
@@ -436,7 +439,7 @@
             </div>
         </div>
         <div class="sect1">
-            <h2 id="_recent_projects"><img src="assets/image/github/favicon.ico" width="40" alt="最近项目">&nbsp;&nbsp;近期项目 Recent Projects
+            <h2 id="_recent_projects"><img src="https://mp-963c4101-48ec-4499-a807-59801aa623d6.cdn.bspapp.com/xuangeaha_xyz/assets/image/github/favicon.ico" width="40" alt="最近项目">&nbsp;&nbsp;近期项目 Recent Projects
             </h2>
             <div class="sectionbody">
                 <div class="paragraph">

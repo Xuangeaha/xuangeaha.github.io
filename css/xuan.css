@@ -1,11 +1,11 @@
 .left {
     float: left;
-    width: 50%;
+    width: 49%;
 }
 
 .right {
     float: right;
-    width: 50%;
+    width: 49%;
 }
 
 .righticon {
@@ -25,11 +25,11 @@
 }
 
 #clickAll {
-    font: 3em 华文细黑;
+    font: 300% 华文细黑;
 }
 
 #followerAll {
-    font: 3em 华文细黑;
+    font: 300% 华文细黑;
 }
 
 .divider {
@@ -97,4 +97,35 @@
 
 a {
     text-decoration: none;
+}
+
+.sect1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.media_on {
+    display: block;
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    .left, .right {
+        width: 100%;
+    }
+
+    .media_on {
+        visibility: hidden;
+        display: none;
+    }
+    
+    #clickAll {
+        font: 200% 华文细黑;
+    }
+    
+    #followerAll {
+        font: 200% 华文细黑;
+    }
+    
 }
